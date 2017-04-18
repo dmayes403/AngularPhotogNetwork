@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const massive = require('massive');
 const session = ('express-session');
-const port = 4334;
+const port = 2222;
 
 const app = express();
 app.use(cors());
