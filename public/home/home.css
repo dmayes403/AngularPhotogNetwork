@@ -1,5 +1,6 @@
-.main {
+.home_main {
   position: relative;
+  background-color: #F8EDDC;
 }
 
 .jumbo_img_container {
@@ -24,17 +25,55 @@
 }
 
 .genre_type_container {
+  background-color: #E9AB69;
+  height: 75px;
+}
+
+.genre_type_box {
+  max-width: 1000px;
+  height: 75px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
-  background-color: #E9AB69;
-  margin: 0px;
-  padding: 0px 150px;
 }
 
 .genre_type_container a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+}
+
+.user_vender_container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  margin: 100px auto;
+  color: white;
+  text-align: center;
+}
+
+.user_vender_container h1 {
+  font-size: 42px;
+}
+
+.user_vender_container p {
+  font-size: 24px;
+}
+
+.user_vender_box {
+  background-color: rgba(233,171,105,.4);
+  border-radius: 5px;
+  width: 400px;
+  padding: 0px 0px 50px 0px;
+}
+
+.icon-camera {
+  color: white;
+  font-size: 128px;
+}
+
+.icon-people {
+  color: white;
+  font-size: 128px;
 }
