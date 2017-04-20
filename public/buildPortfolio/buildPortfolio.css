@@ -8,14 +8,24 @@
 .s1 {
   right: 25%;
   top: 100px;
+  animation: fadein 2s;
 }
 
 .s2 {
   right: 20%;
   top: 140px;
+  animation: fadein 2s;
+  /*animation-delay: 1s;*/
 }
 
 .s3 {
   right: 15%;
   top: 180px;
+  animation: fadein 2s;
+  /*animation-delay: 2s;*/
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
