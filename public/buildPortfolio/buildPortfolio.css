@@ -1,0 +1,21 @@
+.slogan {
+  position: absolute;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 42px;
+}
+
+.s1 {
+  right: 25%;
+  top: 100px;
+}
+
+.s2 {
+  right: 20%;
+  top: 140px;
+}
+
+.s3 {
+  right: 15%;
+  top: 180px;
+}
