@@ -29,3 +29,40 @@
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+.signupContainer {
+  background-color: rgba(233,171,105,.4);
+  width: 550px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 20px 0px 40px 0px;
+  border-radius: 15px;
+  color: white;
+  font-size: 24px;
+}
+
+.signup_form input{
+  width: 450px;
+  height: 40px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.signup_button {
+  height: 40px;
+  width: 200px;
+  background-color: #E9AB69;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.signup_button p {
+  padding-top: 5px;
+}
+
+.signup_button:active {
+  background-color: #8B867D;
+}
