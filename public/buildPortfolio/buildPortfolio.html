@@ -21,12 +21,13 @@
       <input type="text" placeholder="Profile Picture URL" ng-model="profilepic">
       <input type="text" placeholder="Business Name" ng-model="business">
       <input type="text" placeholder="State" ng-model="state">
-      <input type="text" placeholder="City" ng-model="firstName">
+      <input type="text" placeholder="City" ng-model="city">
+      <input type="text" placeholder="Email" ng-model="email">
       <input type="text" placeholder="Phone" ng-model="phone">
       <input type="text" placeholder="Username" ng-model="username">
       <input type="password" placeholder="Password" ng-model="password">
     </form>
-    <div class="signup_button">
+    <div class="signup_button" ng-click="postToVender(firstName, lastName, profilepic, business, state, city, email, phone, username, password)">
       <p>Submit</p>
     </div>
   </section>
