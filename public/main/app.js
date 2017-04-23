@@ -11,6 +11,11 @@ angular.module('photogNetwork',['ui.router'])
             templateUrl: '../buildPortfolio/buildPortfolio.html',
             controller: 'buildPortfolioCtrl'
           })
+          .state('photographers', {
+            url: '/photographers',
+            templateUrl: '../photographers/photographers.html',
+            controller: 'photographersCtrl'
+          })
 
           $urlRouterProvider.otherwise('/');
     })

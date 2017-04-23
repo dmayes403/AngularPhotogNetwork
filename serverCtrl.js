@@ -8,11 +8,22 @@ module.exports = {
               values ('${req.body.firstName}', '${req.body.lastName}', '${req.body.profileURL}', '${req.body.businessName}', '${req.body.state}',
                       '${req.body.city}', '${req.body.email}', '${req.body.phone}', '${req.body.username}', '${req.body.password}')`,
         function(err, vendor){
-      // db.run(`select * from vendor`, function(err, vendor){
         if(err){
           return res.status(500).send(err)
         }
         return res.send();
       })
-    }
+    },
+
+    getPhotographers: function(req, res){
+      db.run(`select * from vendor`,
+        function(err, vendors){
+        if(err){
+          return res.status(500).send(err)
+        }
+        return res.send(vendors);
+      })
+    },
+
+
 }

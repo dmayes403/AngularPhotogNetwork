@@ -22,4 +22,4 @@ module.exports = app;
 
 const controller = require('./serverCtrl.js')
 app.post('/createVendor', controller.createVendor)
-// app.get('/createVendor', controller.createVendor)
+app.get('/getPhotographers', controller.getPhotographers)
