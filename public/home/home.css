@@ -82,3 +82,7 @@
   color: white;
   font-size: 128px;
 }
+
+.user_vender_box > p > a {
+  color: #E9AB69;
+}
