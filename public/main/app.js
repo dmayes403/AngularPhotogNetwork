@@ -17,7 +17,7 @@ angular.module('photogNetwork',['ui.router'])
             controller: 'photographersCtrl'
           })
           .state('genres', {
-            url: '/genres/:type',
+            url: '/genres?genreType',
             templateUrl: '../genres/genres.html',
             controller: 'genresCtrl'
           })

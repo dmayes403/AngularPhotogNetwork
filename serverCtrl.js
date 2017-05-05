@@ -25,5 +25,23 @@ module.exports = {
       })
     },
 
+    getGenre: function(req, res){
+      console.log(req.query)
+      db.run(`SELECT *
+	               FROM
+    	             Vendor
+                   JOIN vendorportfoliogenre ON vendorportfoliogenre.vendor_id = vendor.id
+                  WHERE
+                    vendorportfoliogenre.type = '${req.query.genreType}'`,
+        function(err, vendors){
+        if(err){
+          return res.status(500).send(err)
+        }
+        return res.send(vendors);
+      })
+    },
+
+
+
 
 }
