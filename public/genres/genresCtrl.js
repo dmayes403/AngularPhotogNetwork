@@ -1,8 +1,10 @@
 angular.module('photogNetwork')
     .controller('genresCtrl', function($scope, $stateParams, genresSrvc){
-      console.log($stateParams)
         $scope.getGenre = function(){
-          genresSrvc.getGenre($stateParams.genreType)
+          return genresSrvc.getGenre($stateParams.genreType).then(function(response){
+            console.log(response)
+            $scope.genrePhotographers = response;
+          })
         }
 
         $scope.getGenre();

@@ -1,1 +1,25 @@
-<h1>Hello</h1>
+<section class="home_main">
+  <section class="jumbo_img_container">
+    <img src="../images/i-m-priscilla-149914.jpg"/>
+  </section>
+  <section class="genre_type_container">
+    <section class="genre_type_box">
+      <a ui-sref="genres({genreType: 'Families'})">Families</a>
+      <a ui-sref="genres({genreType: 'Weddings'})">Weddings</a>
+      <a ui-sref="genres({genreType: 'Vacations'})">Vacations</a>
+      <a ui-sref="genres({genreType: 'Engagements'})">Engagements</a>
+    </section>
+  </section>
+  <section class="photographers_container">
+    <section class="photographer" ng-repeat="photog in genrePhotographers">
+      <img ng-src="{{photog.profileurl}}">
+      <section class="photographer__details">
+        <h1>{{photog.businessname}}</h1>
+        <p>{{photog.firstname}} {{photog.lastname}}</p>
+        <p>{{photog.city}}, {{photog.state}}</p>
+        <p>{{photog.email}}</p>
+        <p>{{photog.phone}}</p>
+      </section>
+    </section>
+  </section>
+</section>
