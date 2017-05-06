@@ -21,6 +21,11 @@ angular.module('photogNetwork',['ui.router'])
             templateUrl: '../genres/genres.html',
             controller: 'genresCtrl'
           })
+          .state('individualPhotog', {
+            url: '/individualPhotog/:id',
+            templateUrl: '../individualPhotog/individualPhotog.html',
+            controller: 'individualPhotogCtrl'
+          })
 
           $urlRouterProvider.otherwise('/');
     })

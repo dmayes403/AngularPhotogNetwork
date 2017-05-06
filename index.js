@@ -24,3 +24,4 @@ const controller = require('./serverCtrl.js');
 app.post('/createVendor', controller.createVendor);
 app.get('/getPhotographers', controller.getPhotographers);
 app.get('/getGenre', controller.getGenre);
+app.get('/getIndividualPhotog/:id', controller.getIndividualPhotog);

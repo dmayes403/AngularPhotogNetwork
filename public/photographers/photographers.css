@@ -3,6 +3,11 @@
   color: white;
 }
 
+.photographers_container a {
+  text-decoration: none;
+  color: white;
+}
+
 .photographer {
   display: flex;
   background-color: rgba(233,171,105,.4);

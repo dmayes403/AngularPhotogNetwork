@@ -41,6 +41,22 @@ module.exports = {
       })
     },
 
+    getIndividualPhotog: function(req, res){
+      console.log(req.params)
+      // db.run(`SELECT *
+	    //            FROM
+    	//              Vendor
+      //              JOIN vendorportfoliogenre ON vendorportfoliogenre.vendor_id = vendor.id
+      //             WHERE
+      //               vendorportfoliogenre.type = '${req.query.genreType}'`,
+      //   function(err, photogs){
+      //   if(err){
+      //     return res.status(500).send(err)
+      //   }
+      //   return res.send(photogs);
+      // })
+    },
+
 
 
 
