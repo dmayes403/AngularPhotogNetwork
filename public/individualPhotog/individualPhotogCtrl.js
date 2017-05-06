@@ -4,7 +4,8 @@ angular.module('photogNetwork')
         $scope.getIndividualPhotog = function(){
           console.log($stateParams.id)
             individualPhotogSrvc.getIndividualPhotog($stateParams.id).then(function(response){
-              return response;
+              $scope.individualPhotog = response;
+              console.log($scope.individualPhotog[0]);
             })
         }
 
