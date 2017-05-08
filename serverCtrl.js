@@ -54,6 +54,7 @@ module.exports = {
         if(err){
           return res.status(500).send(err)
         }
+        console.log(individualPhotog);
         return res.send(individualPhotog);
       })
     },

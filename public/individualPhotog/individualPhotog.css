@@ -1,0 +1,11 @@
+.individualPhoto_jumbo_img_container {
+  font-size: 0px;
+}
+
+.individualPhoto_jumbo_img_container img {
+  object-fit: cover;
+  object-position: left;
+  width: calc(100%/3);
+  height: 300px;
+  margin: 0px;
+}

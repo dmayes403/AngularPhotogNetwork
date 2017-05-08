@@ -13,13 +13,13 @@
   <section class="photographers_container">
     <section class="photographer" ng-repeat="photog in genrePhotographers">
       <img ng-src="{{photog.profileurl}}">
-      <section class="photographer__details">
+      <a ui-sref="individualPhotog({id: photog.vendor_id})"><section class="photographer__details">
         <h1>{{photog.businessname}}</h1>
         <p>{{photog.firstname}} {{photog.lastname}}</p>
         <p>{{photog.city}}, {{photog.state}}</p>
         <p>{{photog.email}}</p>
         <p>{{photog.phone}}</p>
-      </section>
+      </section></a>
     </section>
   </section>
 </section>
