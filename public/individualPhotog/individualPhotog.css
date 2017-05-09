@@ -9,3 +9,23 @@
   height: 300px;
   margin: 0px;
 }
+
+.genres_container {
+  margin: 75px auto;
+  width: 60%;
+  /*height: 300px;*/
+  border-radius: 15px;
+  background-color: rgba(233,171,105,.4);
+  padding: 25px;
+  color: white;
+}
+
+.genres__photog__description {
+  width: calc(100%/3);
+}
+
+.genres__photog__description img {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+}

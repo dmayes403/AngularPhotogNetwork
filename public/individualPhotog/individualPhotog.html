@@ -15,4 +15,13 @@
       <a ui-sref="genres({genreType: 'Engagements'})">Engagements</a>
     </section>
   </section>
+  <section class="genres_container">
+    <section class="genres__photog__description">
+      <img ng-src="{{individualPhotog[0].profileurl}}">
+      <h1>{{individualPhotog[0].firstname}} {{individualPhotog[0].lastname}}</h1>
+      <p>{{individualPhotog[0].phone}}</p>
+      <p>{{individualPhotog[0].email}}</p>
+      <p>{{individualPhotog[0].city}}, {{individualPhotog[0].state}}</p>
+    </section>
+  </section>
 </section>
