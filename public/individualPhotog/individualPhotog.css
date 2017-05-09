@@ -11,6 +11,7 @@
 }
 
 .genres_container {
+  display: flex;
   margin: 75px auto;
   width: 60%;
   /*height: 300px;*/
@@ -28,4 +29,21 @@
   object-fit: cover;
   height: 150px;
   width: 150px;
+}
+
+.genre__selection_container {
+  width: calc((100%/3)*2);
+}
+
+.genre__selection__titles {
+  display: flex;
+}
+
+.genre__title {
+  width: 50%;
+  border: 1px solid white;
+}
+
+.genre__title p {
+  padding: 0px 10px;
 }
