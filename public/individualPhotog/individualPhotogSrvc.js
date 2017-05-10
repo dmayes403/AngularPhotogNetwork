@@ -7,4 +7,8 @@ angular.module('photogNetwork')
             return response.data;
           })
         }
+
+        this.getSessionImages = function(photog_id, genre_type){
+          return $http.get('/getSessionImages/') //////////////////// fix this!!!
+        }
     })
