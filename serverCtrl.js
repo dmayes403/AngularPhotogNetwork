@@ -43,13 +43,36 @@ module.exports = {
 
     getIndividualPhotog: function(req, res){
       console.log(req.params)
-      db.run(`SELECT *
+      db.run(`SELECT
+                  V.id,
+                  V.firstname,
+                  V.lastname,
+                  V.profileurl,
+                  V.businessname,
+                  V.state,
+                  V.city,
+                  V.email,
+                  V.phone,
+                  V.username,
+                  V.password,
+                  VG.id genre_id,
+                  VG.type,
+                  VG.price_1,
+                  VG.title_1,
+                  VG.session_time_1,
+                  VG.description_1,
+                  VG.price_2,
+                  VG.title_2,
+                  VG.session_time_2,
+                  VG.description_2,
+                  VI.id images_id,
+                  VI.portfolioimage
 	               FROM
-    	          Vendor
-                  JOIN vendorportfoliogenre ON vendorportfoliogenre.vendor_id = vendor.id
-                  JOIN vendorportfolioimages ON vendorportfolioimages.vendor_id = vendor.id
+    	          Vendor V
+                  JOIN vendorportfoliogenre VG ON VG.vendor_id = V.id
+                  JOIN vendorportfolioimages VI ON VI.vendor_id = V.id
                 WHERE
-    	           vendor.id = '${req.params.id}'`,
+    	           V.id = '${req.params.id}'`,
         function(err, individualPhotog){
         if(err){
           return res.status(500).send(err)
