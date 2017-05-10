@@ -11,10 +11,11 @@ angular.module('photogNetwork')
 
         $scope.getIndividualPhotog();
 
-        $scope.getSessionImages = function(photo_id, genre_type){
-          this.getSessionImages(photo_id, genre_type).then(function(response){
+        $scope.getSessionImages = function(photog_id, genre_type){
+          console.log('working');
+          console.log(photog_id, genre_type);
+          individualPhotogSrvc.getSessionImages(photog_id, genre_type).then(function(response){
             $scope.sessionImages = response;
           })
-
         }
     })

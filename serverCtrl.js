@@ -82,6 +82,25 @@ module.exports = {
       })
     },
 
+    getSessionImages: function(req, res){
+      console.log(req.query)
+      db.run(`SELECT *
+                FROM
+	                vendorportfolioimages VI
+                  JOIN vendorportfoliogenre VG ON VI.portfoliogenre_id = VG.id
+                WHERE
+                  VI.vendor_id = ${req.query.photog}
+                  and (VG.title_1 = '${req.query.genre}'
+                  or VG.title_2 = '${req.query.genre}')`,
+        function(err, individualPhotog){
+        if(err){
+          return res.status(500).send(err)
+        }
+        console.log(individualPhotog);
+        return res.send(individualPhotog);
+      })
+    },
+
 
 
 

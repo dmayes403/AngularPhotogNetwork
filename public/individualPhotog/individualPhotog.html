@@ -25,10 +25,12 @@
     </section>
     <section class="genre__selection_container">
       <section class="genre__selection__titles">
-        <div class="genre__title">
+        <div class="genre__title" ng-click="getSessionImages(individualPhotog[0].id,individualPhotog[0].title_1)">
+        <!-- <div class="genre__title"> -->
           <p>{{individualPhotog[0].title_1}}</p>
         </div>
-        <div class="genre__title">
+        <div class="genre__title" ng-click="getSessionImages(individualPhotog[0].id,individualPhotog[0].title_2)">
+        <!-- <div class="genre__title"> -->
           <p>{{individualPhotog[0].title_2}}</p>
         </div>
       </section>

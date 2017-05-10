@@ -9,6 +9,9 @@ angular.module('photogNetwork')
         }
 
         this.getSessionImages = function(photog_id, genre_type){
-          return $http.get('/getSessionImages/') //////////////////// fix this!!!
+          return $http.get('/getSessionImages?photog=' + photog_id + '&genre=' + genre_type).then(function(response){
+            console.log(response);
+            return response.data;
+          })
         }
     })
