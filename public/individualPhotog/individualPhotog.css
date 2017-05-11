@@ -53,4 +53,11 @@
   height: 300px;
   border: 1px solid white;
   border-top: none;
+  padding: 15px;
+}
+
+.genre__description img {
+  object-fit: cover;
+  width: 200px;
+  height: 150px;
 }

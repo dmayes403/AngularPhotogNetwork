@@ -35,7 +35,10 @@
         </div>
       </section>
       <section class="genre__description">
-        <img ng-src="{{sessionImages[0].portfolioimage}}"
+        <img ng-src="{{sessionImages[0].portfolioimage}}">
+        <p>{{sessionImages[0].description_1}}</p>
+        <p>Price: {{sessionImages[0].price_1 | currency}}</p>
+        <p>Session Time: {{sessionImages[0].session_time_1}}</p>
       </section>
     </section>
   </section>
