@@ -18,4 +18,8 @@ angular.module('photogNetwork')
             $scope.sessionImages = response;
           })
         }
+
+        $scope.genre_type_1 = false;
+        $scope.genre_type_2 = false;
+
     })

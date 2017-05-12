@@ -50,14 +50,25 @@
 }
 
 .genre__description {
-  height: 300px;
   border: 1px solid white;
   border-top: none;
   padding: 15px;
 }
 
-.genre__description img {
+.genre__description h1 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.genre__description > div > img {
   object-fit: cover;
-  width: 200px;
-  height: 150px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.test {
+  text-align: center;
 }

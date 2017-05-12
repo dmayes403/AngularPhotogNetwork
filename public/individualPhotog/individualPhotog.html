@@ -25,20 +25,32 @@
     </section>
     <section class="genre__selection_container">
       <section class="genre__selection__titles">
-        <div class="genre__title" ng-click="getSessionImages(individualPhotog[0].id,individualPhotog[0].title_1)">
+        <div class="genre__title" ng-click="getSessionImages(individualPhotog[0].id,individualPhotog[0].title_1); genre_type_1 = true; genre_type_2 = false;">
         <!-- <div class="genre__title"> -->
           <p>{{individualPhotog[0].title_1}}</p>
         </div>
-        <div class="genre__title" ng-click="getSessionImages(individualPhotog[0].id,individualPhotog[0].title_2)">
+        <div class="genre__title" ng-click="getSessionImages(individualPhotog[0].id,individualPhotog[0].title_2); genre_type_1 = false; genre_type_2 = true;">
         <!-- <div class="genre__title"> -->
           <p>{{individualPhotog[0].title_2}}</p>
         </div>
       </section>
-      <section class="genre__description">
-        <img ng-src="{{sessionImages[0].portfolioimage}}">
+      <section class="genre__description" ng-show="genre_type_1">
+        <h1>{{sessionImages[0].title_1}}</h1>
+        <div class="test">
+          <img ng-src="{{sessionImages[0].portfolioimage}}">
+        </div>
         <p>{{sessionImages[0].description_1}}</p>
         <p>Price: {{sessionImages[0].price_1 | currency}}</p>
-        <p>Session Time: {{sessionImages[0].session_time_1}}</p>
+        <p>Session Time: {{sessionImages[0].session_time_1}} minutes</p>
+      </section>
+      <section class="genre__description" ng-show="genre_type_2">
+        <h1>{{sessionImages[0].title_2}}</h1>
+        <div class="test">
+          <img ng-src="{{sessionImages[0].portfolioimage}}">
+        </div>
+        <p>{{sessionImages[0].description_2}}</p>
+        <p>Price: {{sessionImages[0].price_2 | currency}}</p>
+        <p>Session Time: {{sessionImages[0].session_time_2}} minutes</p>
       </section>
     </section>
   </section>
