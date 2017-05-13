@@ -27,8 +27,8 @@
 
 .genres__photog__description img {
   object-fit: cover;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 
 .genre__selection_container {
@@ -71,4 +71,17 @@
 
 .test {
   text-align: center;
+}
+
+.book_session_button {
+  width: 50%;
+  height: 40px;
+  background: white;
+  color: rgba(233,171,105,.4);
+  text-align: center;
+  margin: 40px auto 25px auto;
+}
+
+.book_session_button p {
+  padding-top: 10px;
 }
