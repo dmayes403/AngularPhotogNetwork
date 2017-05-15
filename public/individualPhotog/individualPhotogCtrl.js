@@ -12,8 +12,6 @@ angular.module('photogNetwork')
         $scope.getIndividualPhotog();
 
         $scope.getSessionImages = function(photog_id, genre_type){
-          console.log('working');
-          console.log(photog_id, genre_type);
           individualPhotogSrvc.getSessionImages(photog_id, genre_type).then(function(response){
             $scope.sessionImages = response;
           })
@@ -21,5 +19,13 @@ angular.module('photogNetwork')
 
         $scope.genre_type_1 = false;
         $scope.genre_type_2 = false;
+
+        $scope.currentImage = 0;
+        $scope.currentPic = function(){
+          $scope.currentImage++;
+          if($scope.currentImage >= $scope.sessionImages.length){
+            $scope.currentImage = 0;
+          }
+        }
 
     })

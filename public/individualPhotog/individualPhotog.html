@@ -37,7 +37,7 @@
       <section class="genre__description" ng-show="genre_type_1">
         <h1>{{sessionImages[0].title_1}}</h1>
         <div class="test">
-          <img ng-src="{{sessionImages[0].portfolioimage}}">
+          <img ng-src="{{sessionImages[currentImage].portfolioimage}}" ng-click="currentPic(individualPhotog[0].id,individualPhotog[0].title_1)">
         </div>
         <p>{{sessionImages[0].description_1}}</p>
         <p>Price: {{sessionImages[0].price_1 | currency}}</p>
